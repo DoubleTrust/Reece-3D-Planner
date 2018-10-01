@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Bathtob_Green
+  - Sink
+  - Bathtob_Black
+  - ShowerHead
+  - showerTapware
+  - Basin01
+  - Basin02
+  - Basin03
+  - BasinTapware
+  - ShowerHead02
+  - BasinTapware02
+  - Basin04
+  - Basin05
+  - Toilet
+  - Basin
+  - Basin_update
+  - Roof
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
