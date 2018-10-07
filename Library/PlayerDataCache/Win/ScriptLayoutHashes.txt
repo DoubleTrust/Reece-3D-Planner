@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Sebastian Yan/Desktop/DEAKIN/SIT302/UI_test2.exe
+C:/Users/Sebastian Yan/Desktop/DEAKIN/SIT302/demo/UI_test2.exe
 SceneListBegin?
 Assets/MainMenu.unity
 Assets/room1.unity
@@ -149,7 +149,7 @@ e7489514a648ce787e3e741d97e0f561 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ActiveStateToggler
 6893169c34f2bd6e21624eac3f65cee9 Assembly-CSharp-firstpass.dll:UnityStandardAssets.ImageEffects.ScreenSpaceAmbientObscurance
-486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.CreateMouse
+579e8ecb1d6548a1d06d9200556623cb Assembly-CSharp.dll:.CreateMouse
 3b50f190310fcb8e65d7b3ba200d1f87 Assembly-CSharp.dll:.example
 265af25972b0bc93c17742b4f21e43d6 Assembly-CSharp.dll:.PlayerLook
 382b8ef512fa8d6108723a01b57af65b UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker

@@ -4,13 +4,13 @@ using System.Collections;
 public class CreateMouse : MonoBehaviour
 {
 
-    bool isLocked;
+    public bool isLocked;
     void Start()
     {
         setCursorLock(true);
     }
 
-    void setCursorLock(bool isLocked)
+    public void setCursorLock(bool isLocked)
     {
 
         this.isLocked = isLocked;
@@ -29,8 +29,8 @@ public class CreateMouse : MonoBehaviour
         }
     }
 
-        // Update is called once per frame
-        void Update()
+    // Update is called once per frame
+    void Update()
     {
 
         if (Input.GetKeyDown(KeyCode.Q))

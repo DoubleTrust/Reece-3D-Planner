@@ -8,8 +8,14 @@ public class PauseMenu : MonoBehaviour {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public KeyCode PressMenu;
-	// Use this for initialization
-	public void OnResume () {
+    bool isLocked = false;
+    void Start()
+    {
+        setCursorLock(true);
+    }
+    // Use this for initialization
+    public void OnResume () {
+        Cursor.lockState = CursorLockMode.Locked;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -17,7 +23,6 @@ public class PauseMenu : MonoBehaviour {
 
      void OnPause() 
     {
-
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
@@ -30,16 +35,17 @@ public class PauseMenu : MonoBehaviour {
 
     public void OnQuit()
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                Application.Quit();
+        #endif
     }
 
     // Update is called once per frame
     void Update () {
         if (Input.GetKeyDown(PressMenu)) {
+            setCursorLock(!isLocked);
             if (GameIsPaused) { 
                 OnResume();
             }
@@ -48,4 +54,20 @@ public class PauseMenu : MonoBehaviour {
             }
         }
 	}
+    void setCursorLock(bool isLocked)
+    {
+
+        this.isLocked = isLocked;
+        Cursor.visible = !isLocked;
+        if (isLocked == true)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+
+        }
+        //If game is paused
+        else if (isLocked == false)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+    }
 }
